@@ -19,7 +19,7 @@ export const Swatch = ({ color, style, onClick, title = color }) => {
   const handleClick = (e) => onClick(color, e)
 
   return (
-    <div style={ styles.swatch } onClick={ handleClick } title={ title } />
+    <div style={ styles.swatch } onMouseDown={ handleClick } title={ title } />
   )
 }
 
